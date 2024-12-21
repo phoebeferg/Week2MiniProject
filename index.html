@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Study Guide</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1> Mini Project 2 </h1>
+    <h2>CSS Snippet Cheat Sheet</h2>
+    <main>
+        
+        <section class="flex-container">
+            <header>Changing the Border Corners</header>
+            <pre>
+border-radius: 25px</pre>
+        </section>
+        <section class="flex-container">
+            <header>Rotating Items</header>
+            <pre>
+.rotate {
+transform: rotate(7deg); }</pre>
+        </section>
+        <section class="flex-container">
+            <header>Flexbox Element</header>
+            <pre>
+/* Turns this element into a flexbox */
+display: flex;
+/* Forces elements to the next line if they don't fit */
+flex-wrap: wrap;</pre>
+        </section>
+
+
+        <section class="flex-container">
+            <header>Display text only when the mouse hovers over the parent element</header>
+            <pre>
+.[class] [child element] {
+display: none;}
+
+.[class]:hover [child element]{
+    display:block;}</pre>
+        </section>
+        <section class="flex-container">
+            <header>Tooltip</header>
+            <pre>
+[HTML span class = tooltip] .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;}
+    
+[HTML span class = tooltip] .tooltip:hover::after{
+    content: "text goes here";
+    background-color: #13293d;
+    color: #fff;
+    padding: .25em;
+    font-size: .8em;
+    position: absolute;
+    top: -20px;
+    min-width: 200px;}
+            </pre>
+        </section>
+        <section class="flex-container">
+            <header>Adding Symbols (Entities) before/after text</header>
+            <pre>
+[parent] [child]::before,
+[parent] [child]::after {
+content: '\26F5';
+color: #8ac4ff;
+padding: 1%;
+font-family: cursive;}
+
+https://www.w3schools.com/cssref/css_entities.php</pre>
+
+
+        </section>
+    </main>
+    <footer>
+        Phoebe Ferguson Production
+
+    </footer>
+</body>
+</html>
